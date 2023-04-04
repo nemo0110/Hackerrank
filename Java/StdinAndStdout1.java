@@ -30,4 +30,23 @@ public class Solution {
         }
         scan.close();
     }
+    
+   
+public void solution() throws IOException {
+        BufferedReader bR = new BufferedReader(new InputStreamReader(System.in));
+        bR.lines().forEach(line->{
+            try {
+                int value = Integer.parseInt(line.trim());
+                System.out.println(value);
+            }catch(Exception e) {
+                try {
+                    java.math.BigInteger value =  java.math.BigInteger.valueOf(Long.parseLong(line.trim()));
+                    System.out.println("Valore troppo grande.");
+                }catch(Exception ex) {
+                    System.out.println("Non è un intero.");
+                } 
+            } 
+        });
+        bR.close();
+    }
 }
