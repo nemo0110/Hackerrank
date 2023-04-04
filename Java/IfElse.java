@@ -62,3 +62,23 @@ public class Solution {
         scanner.close();
     }
 }
+
+public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        int N = Integer.parseInt(bufferedReader.readLine().trim()); 
+            if (N >= 1 && N <= 100) {
+                String numberType = N % 2 == 0 ? "even" : "odd";
+                if (numberType.equals("even")) {
+                    if ((N >= 2 && N <= 5) || N > 20) {
+                        System.out.println("Not Weird");
+                    } else if (N >= 6 && N <= 20) {
+                        System.out.println("Weird");
+                    }
+                } else {
+                    System.out.println("Weird");
+                }
+            } else {
+               System.out.println("Constraints violated");
+            }
+        bufferedReader.close();
+    }
