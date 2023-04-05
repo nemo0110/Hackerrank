@@ -47,7 +47,7 @@ s4 = 5 + 1*3 + 2*3 + 4*3 + 8*3 + 16*3 = 98
 We then print each element of our series as a single line of space-separated values.
 */
 
-public Class Solution{
+public class Solution{
   
     public static void solution0(){
         Scanner in = new Scanner(System.in);
