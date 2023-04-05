@@ -29,7 +29,7 @@ Each String is left-justified with trailing whitespace through the first 15 char
 The leading digit of the integer is the 16th character, and each integer that was less than 3 digits now has leading zeroes.
 */
 public class Solution{
-    public void solution() {
+    public static void solution0() {
             Scanner sc=new Scanner(System.in);
             System.out.println("================================");
             for(int i=0;i<3;i++){
@@ -44,7 +44,7 @@ public class Solution{
             System.out.println("================================");
     }
 
-    public void solution() {
+    public static void solution1() {
         int i = 0;
         while(scan.hasNext()){
         	if(i == 0 || i%3==0) {
@@ -64,7 +64,7 @@ public class Solution{
         scan.close();
     }
 
-	public void solution() throws IOException {
+	public static void solution1() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("================================");
         br.lines().forEach(line ->{
