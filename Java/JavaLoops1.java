@@ -27,7 +27,8 @@ Sample Output
 2 x 9 = 18
 2 x 10 = 20
 */
-
+public class Solution{
+	
     public static void solution0() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine().trim());
@@ -39,7 +40,7 @@ Sample Output
     }
 
 	public static void solution1() throws IOException {
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String input;
 		while ((input = br.readLine()) != null) {
 			int n = -1;
@@ -69,3 +70,4 @@ Sample Output
       }
       scan.close();
     }
+}
