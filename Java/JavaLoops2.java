@@ -48,5 +48,43 @@ We then print each element of our series as a single line of space-separated val
 */
 
 public Class Solution{
-
+  
+    public static void solution0(){
+        Scanner in = new Scanner(System.in);
+        int q=in.nextInt();
+        for(int i=0;i<q;i++){
+            double a = in.nextDouble();
+            int b = in.nextInt();
+            int n = in.nextInt();
+            if(i>0) {
+                System.out.print("\n");
+            }
+            for(int j = 0; j<n;j++) {
+              a  = a + Math.pow(2, j)*b;
+               System.out.print((int)a+" ");
+            }
+        }
+        in.close();    
+    }
+      public static void solution1(){
+        Scanner in = new Scanner(System.in);
+        int q=in.nextInt();
+         for(int i=0;i<q;i++){
+            double a = in.nextDouble();
+            int b = in.nextInt();
+            int n = in.nextInt();
+        for(int j=0;j<n;j++) {
+            System.out.print((int)a + (int)sum(b, j)+ " ");
+        }
+        System.out.println();
+    }
+    }
+    public static double sum(int b, int n) {
+        if (n > 0) {
+            double k = Math.pow(2, n) * b;
+            return k + sum(b, --n);
+        } else {
+            return Math.pow(2, n) * b ;
+        }
+    }
 }
