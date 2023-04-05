@@ -28,7 +28,7 @@ Explanation:
 Each String is left-justified with trailing whitespace through the first 15 characters. 
 The leading digit of the integer is the 16th character, and each integer that was less than 3 digits now has leading zeroes.
 */
-
+public class Solution{
     public void solution() {
             Scanner sc=new Scanner(System.in);
             System.out.println("================================");
@@ -79,3 +79,4 @@ The leading digit of the integer is the 16th character, and each integer that wa
         System.out.println("================================");
         br.close();
 	}
+}
