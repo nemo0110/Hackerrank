@@ -15,7 +15,7 @@ Sample Output
 */
 
 public class Solution {
-    public void solution() {
+    public static void solution0() {
         Scanner scan = new Scanner(System.in);
         while (scan.hasNext()) {
             if (scan.hasNextInt()) {
@@ -32,7 +32,7 @@ public class Solution {
     }
     
    
-public void solution() throws IOException {
+public static void solution1() throws IOException {
         BufferedReader bR = new BufferedReader(new InputStreamReader(System.in));
         bR.lines().forEach(line->{
             try {
