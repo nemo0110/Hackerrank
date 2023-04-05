@@ -34,7 +34,7 @@ Int: 42
 
 public class Solution {
 
-    public void solution() {
+    public static void solution0() {
         Scanner scan = new Scanner(System.in);
         int i = 0;double d=0;String s=null;
         while(scan.hasNextLine()){
@@ -50,7 +50,7 @@ public class Solution {
         System.out.println("Int: " + i);
     }
     
-    public void solution() {
+    public static void solution1() {
        BufferedReader bR = new BufferedReader(new InputStreamReader(System.in));
         var wrapperI = new Object(){ Integer i; };
         var wrapperD = new Object(){ Double d; };
@@ -71,7 +71,7 @@ public class Solution {
          System.out.println("Int: " + wrapperI.i);
     }
     
-      public void solution() {
+      public static void solution2() {
         BufferedReader bR = new BufferedReader(new InputStreamReader(System.in));
         var wrapperI = new Object(){ Integer i; };
         var wrapperD = new Object(){ Double d; };
