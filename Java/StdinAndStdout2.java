@@ -32,7 +32,7 @@ Int: 42
 
 public class Solution {
 
-    public static void main(String[] args) {
+    public void solution() {
         Scanner scan = new Scanner(System.in);
         int i = 0;double d=0;String s=null;
         while(scan.hasNextLine()){
@@ -46,5 +46,46 @@ public class Solution {
         System.out.println("String: " + s);
         System.out.println("Double: " + d);
         System.out.println("Int: " + i);
+    }
+    
+    public void solution() {
+       BufferedReader bR = new BufferedReader(new InputStreamReader(System.in));
+        var wrapperI = new Object(){ Integer i; };
+        var wrapperD = new Object(){ Double d; };
+        var wrapperS = new Object(){ String s = ""; };
+        String line ="";
+        while((line = bR.readLine()) != null) {  
+             if(wrapperI.i == null){
+                 wrapperI.i = Integer.parseInt(line); 
+             }else if(wrapperD.d == null){
+                 wrapperD.d = Double.valueOf(line);
+             }else{
+                wrapperS.s = line;  
+             }
+        }
+         bR.close();
+         System.out.println("String: " + wrapperS.s);
+         System.out.println("Double: " + wrapperD.d);
+         System.out.println("Int: " + wrapperI.i);
+    }
+    
+      public void solution() {
+        BufferedReader bR = new BufferedReader(new InputStreamReader(System.in));
+        var wrapperI = new Object(){ Integer i; };
+        var wrapperD = new Object(){ Double d; };
+        var wrapperS = new Object(){ String s = ""; };
+        bR.lines().forEach(line->{
+             if(wrapperI.i == null){
+                 wrapperI.i = Integer.parseInt(line); 
+             }else if(wrapperD.d == null){
+                 wrapperD.d = Double.valueOf(line);
+             }else{
+                wrapperS.s = line;  
+             }
+         });
+         bR.close();
+         System.out.println("String: " + wrapperS.s);
+         System.out.println("Double: " + wrapperD.d);
+         System.out.println("Int: " + wrapperI.i);
     }
 }
