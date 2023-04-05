@@ -63,3 +63,19 @@ The leading digit of the integer is the 16th character, and each integer that wa
         }
         scan.close();
     }
+
+	public void solution() throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("================================");
+        br.lines().forEach(line ->{
+        	if(line.split(" ").length>1) {
+        	String[]s =line.split(" ");
+        	  while(s[1].length()<3){
+        		  s[1] = "0"+s[1];
+              }
+        	  System.out.printf(s[0]+"%"+(18-s[0].length())+"s %n", s[1]);
+        	}
+        });
+        System.out.println("================================");
+        br.close();
+	}
