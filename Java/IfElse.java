@@ -39,7 +39,7 @@ public class Solution {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    public void solution() {
+    public static void solution0() {
         while (scanner.hasNext()) {
             int N = scanner.nextInt();
             scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
@@ -63,7 +63,7 @@ public class Solution {
     }
 }
 
-public void solution() throws IOException {
+public static void solution1() throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(bufferedReader.readLine().trim()); 
             if (N >= 1 && N <= 100) {
