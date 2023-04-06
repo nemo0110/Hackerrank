@@ -1,6 +1,10 @@
 /*
 Given a string, s, and two indices, start and end, print a substring consisting of all characters in the inclusive range from start to end-1.
 
+Links:
+https://en.wikipedia.org/wiki/Substring
+https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#substring-int-int-
+
 Input Format:
 The first line contains a single string denoting s.
 The second line contains two space-separated integers denoting the respective values of start and end.
