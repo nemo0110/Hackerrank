@@ -93,8 +93,8 @@ public class Solution {
     }
   
   	public static boolean solution1(String a, String b) {
-      StringBuilder a1 = new StringBuilder(a.toLowerCase());
-      StringBuilder b1 = new StringBuilder(b.toLowerCase());
-      return Arrays.equals(a1.chars().sorted().toArray(), b1.chars().sorted().toArray()) ? true : false;
+	      StringBuilder a1 = new StringBuilder(a.toLowerCase());
+	      StringBuilder b1 = new StringBuilder(b.toLowerCase());
+	      return Arrays.equals(a1.chars().sorted().toArray(), b1.chars().sorted().toArray()) ? true : false;
 	}
 }
