@@ -77,11 +77,12 @@ public class Solution {
         String a = scan.next();
         String b = scan.next();
         scan.close();
-        boolean ret = solution0(a, b);
+        //boolean ret = solution0(a, b);
+        boolean ret = solution1(a, b);
         System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
     }
   
-      static boolean solution0(String a, String b) {
+    public static boolean solution0(String a, String b) {
         a = a.toLowerCase();
         b = b.toLowerCase();
         char[] aSort = a.toCharArray();
@@ -91,4 +92,9 @@ public class Solution {
         return java.util.Arrays.equals(aSort, bSort) ? true : false;
     }
   
+  	public static boolean solution1(String a, String b) {
+      StringBuilder a1 = new StringBuilder(a.toLowerCase());
+      StringBuilder b1 = new StringBuilder(b.toLowerCase());
+      return Arrays.equals(a1.chars().sorted().toArray(), b1.chars().sorted().toArray()) ? true : false;
+	}
 }
