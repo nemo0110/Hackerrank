@@ -51,4 +51,22 @@ https://en.wikipedia.org/wiki/Method_stub
 
 public class Solution {
 
+        public static void solution0() {
+            Scanner scan = new Scanner(System.in);
+            String s = scan.next();
+            int k = scan.nextInt();
+            scan.close();
+            String smallest = "";
+            String largest = "";
+            TreeSet<String> substrings = new TreeSet<String>();
+            for(int i = 0;i<s.length();i++) {
+                if(i+k>s.length()) {
+                    break;
+                }
+                substrings.add(s.substring(i, i+k));        
+            }
+            smallest = substrings.first();
+            largest = substrings.last();
+            System.out.println(smallest + "\n" + largest);
+        }
 }
