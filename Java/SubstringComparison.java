@@ -70,7 +70,7 @@ public class Solution {
             System.out.println(smallest + "\n" + largest);
         }
     
-        public static void substrcomp1() {
+        public static void solution1() {
             Scanner scan = new Scanner(System.in);
             String s = scan.next();
             int k = scan.nextInt();
