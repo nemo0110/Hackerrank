@@ -69,4 +69,18 @@ public class Solution {
             largest = substrings.last();
             System.out.println(smallest + "\n" + largest);
         }
+    
+        public static void substrcomp1() {
+            Scanner scan = new Scanner(System.in);
+            String s = scan.next();
+            int k = scan.nextInt();
+            scan.close();
+            TreeSet<String> substrings = new TreeSet<String>();
+            int i = 0;
+            while(i+k<=s.length()) {
+                substrings.add(s.substring(i, i+k));        
+                i++;
+            }
+            System.out.println(substrings.first() + "\n" + substrings.last());
+        }
 }
