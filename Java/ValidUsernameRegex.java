@@ -55,7 +55,7 @@ Refer diagram in the challenge statement.
 */
 public class ValidUsernameRegex {
   
-      public static void usernamePolicy0() {
+      public static void solution0() {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
         String regex = "^[a-zA-Z]\\w{7,29}$";
@@ -71,7 +71,7 @@ public class ValidUsernameRegex {
         }
       }
   
-  	public static void usernamePolicy1() {
+  	public static void solution1() {
           Scanner scan = new Scanner(System.in);
           int n = Integer.parseInt(scan.nextLine());
           while (n-- != 0) {
