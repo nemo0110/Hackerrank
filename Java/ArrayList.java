@@ -42,5 +42,31 @@ ERROR!
 */
 
 public class ArrayList {
+  
+    public static void solution0() throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int y0 = Integer.valueOf(br.readLine());
+        int[][] x0 = new int[y0][];
+        for(int i=0;i<y0;i++) {
+            x0[i] = java.util.regex.Pattern.compile("\s+").splitAsStream(br.readLine())
+                      .mapToInt(Integer::parseInt)
+                      .toArray();;
+        }
+        int y1 = Integer.valueOf(br.readLine());
+        int[][] x1 = new int[y1][2];
+        for(int i=0;i<y1;i++) {
+            x1[i] = Arrays.stream(br.readLine().split("\s+"))
+                      .mapToInt(Integer::parseInt)
+                      .toArray();
+        }
+        for(int i=0;i<y1;i++) {
+            try {
+               System.out.println(x0[(x1[i][0])-1][x1[i][1]]);
+            }catch(Exception e) {
+                System.out.println("ERROR!");
+            }
 
+        }
+        br.close();
+    }
 }
