@@ -50,7 +50,7 @@ public class ArrayList {
         for(int i=0;i<y0;i++) {
             x0[i] = java.util.regex.Pattern.compile("\s+").splitAsStream(br.readLine())
                       .mapToInt(Integer::parseInt)
-                      .toArray();;
+                      .toArray();
         }
         int y1 = Integer.valueOf(br.readLine());
         int[][] x1 = new int[y1][2];
