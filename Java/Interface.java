@@ -33,6 +33,13 @@ final class MyCalculator implements AdvancedArithmetic{
     }
 }
 
+final class MyCalculator2 implements AdvancedArithmetic{
+    public int divisor_sum(int n){
+    return java.util.stream.IntStream.rangeClosed(1,n/2)
+             .filter(e -> n % e == 0)
+             .sum() + n;
+}
+
 class Solution{
     public static void main(String []args){
         MyCalculator my_calculator = new MyCalculator();
