@@ -33,14 +33,14 @@ abstract class Book{
 }
 
 final class MyBook extends Book{
-    String title;
 	
     @Override
     public void setTitle(String s){
-        this.title = s;
+        super.title = s;
     }
-    String getTitle(){
-        return title;
+	
+    public String getTitle(){
+	return super.getTitle();
     }
 }
 
