@@ -34,6 +34,8 @@ abstract class Book{
 
 final class MyBook extends Book{
     String title;
+	
+    @Override
     public void setTitle(String s){
         this.title = s;
     }
