@@ -57,8 +57,13 @@ When we save each integer to its corresponding index in a, we get a = [10,20,30,
 The locked code prints each array element on a new line from left to right.
 */
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.List;
+import java.util.stream.Stream;
+import static java.util.stream.Collectors.toList;
+
 public class Array1D {
-  
   	public static void solution0() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine().trim());
