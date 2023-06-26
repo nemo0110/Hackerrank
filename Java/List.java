@@ -50,5 +50,28 @@ Having performed all Q queries, we print L1 as a single line of space-separated 
 
 public class Solution {
 
+      public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
+        List<Integer> l = new ArrayList<Integer>();
+        String[] values = br.readLine().split(" ");
+        for(String v : values){
+            l.add(Integer.valueOf(v));
+        }
+        String q = br.readLine();
+        for(int i=0;i<Integer.valueOf(q);i++){
+            String cases = br.readLine();
+            if(cases.equals("Insert")){
+                String[] numIndex = br.readLine().split(" ");
+                l.add(Integer.valueOf(numIndex[0]),Integer.valueOf(numIndex[1]));
+            }else if(cases.equals("Delete")){
+                String index = br.readLine();
+                l.remove(Integer.parseInt(index));
+            }
+        }
+        for(Integer i : l){
+            System.out.print(i + " ");
+        }
+    }
   
 }
